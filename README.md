@@ -2,7 +2,7 @@
 
 Para os momentos de tristeza ficarem ainda mais tristes:
 
-[diegomendesmoreno.github.io/piadasruins](https://diegomendesmoreno.github.io/piadasruins)
+[diegomendesmoreno.github.io/piadas_ruins](https://diegomendesmoreno.github.io/piadas_ruins/)
 
 ## License
 
