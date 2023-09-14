@@ -13,21 +13,29 @@ function getJokeById(id) {
 
 // Function to display a joke
 function tellJoke() {
+    // Joke content
     const jokeSetupDisplay = document.getElementById('joke-setup-display');
     const jokePunchlineDisplay = document.getElementById('joke-punchline-display');
+    
+    // Joke Source
+    const jokeSourceTitle = document.getElementById('joke-source-title');
     const jokeSourceLink = document.getElementById('source-link');
     
     const randomId = Math.floor(Math.random() * jokesData.length) + 1;
     const randomJoke = getJokeById(randomId);
 
     if (randomJoke) {
+        // Joke content
         jokeSetupDisplay.innerText = randomJoke['joke-setup'];
         jokePunchlineDisplay.innerText = randomJoke['joke-punchline'];
+
+        // Joke Source
+        jokeSourceTitle.innerText = "Fonte:";
         jokeSourceLink.innerText = randomJoke['link'];
         jokeSourceLink.href = randomJoke['link'];
         
     } else {
-        jokeDisplay.innerText = 'Oops! Something went wrong. Please try again.';
+        jokeDisplay.innerText = 'Ops! Esqueci a piada, pergunta de novo...';
     }
 }
 
